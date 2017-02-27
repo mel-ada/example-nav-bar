@@ -3,6 +3,7 @@
   <head>
     <title>Wine.com</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="logoContainer">
@@ -10,10 +11,12 @@
     </div>
     <div class="header">
       <div class="row">
-        <a class="menuItem" href="#">Wine</a>
-        <a class="menuItem" href="#">Gifts</a>
-        <a class="menuItem" href="#">Discover</a>
-        <div class="searchWrapper">
+        <div class="menuWrapper col-4">
+          <a class="menuItem" href="#">Wine</a>
+          <a class="menuItem" href="#">Gifts</a>
+          <a class="menuItem" href="#">Discover</a>
+        </div>
+        <div class="searchWrapper col-4">
           <input class="searchBox" type="text" placeholder="Search Wine.com">
           <select class="dropDown" name="state">
             <option value="AL">AL</option>
@@ -69,13 +72,13 @@
           	<option value="WY">WY</option>
           </select>
         </div>
-        <div class="accountWrapper">
+        <div class="accountWrapper col-4">
           <a class="accountItem" href="#">Sign In</a>
           <a class="accountItem" href="#">Cart</a>
           <a class="accountItem" href="#">Contact</a>
         </div>
       </div>
     </div>
-      <img class="grapes" src="./images/grapes.jpg" alt="Grapes">
+    <img class="grapes" src="./images/grapes.jpg" alt="Grapes">
   </body>
 </html>
